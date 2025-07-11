@@ -1,11 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Piano Tiles</title>
-  <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Piano Tiles Game</title>
+  <link rel="icon" href="favicon.ico" />
+  <script src="https://cdn.jsdelivr.net/processing.js/1.6.6/processing.min.js"></script>
+  <style>
+    body {
+      margin: 0; 
+      background: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+    }
+    canvas {
+      border: 3px solid #aaa;
+    }
+  </style>
 </head>
 <body>
-  <canvas id="pianoCanvas" data-processing-sources="game.js"></canvas>
+  <canvas
+    id="gameCanvas"
+    data-processing-sources="game.pde"
+  ></canvas>
 </body>
 </html>

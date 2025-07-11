@@ -1,23 +1,24 @@
 # Piano Tiles Game
 
-A level-based reaction game built using JavaScript and ProcessingJS on Khan Academy.
+A fast-paced, level-based reaction game built using JavaScript and ProcessingJS on Khan Academy.
 
 ## Authors
 - Herik Muñoz
 - Mithilesh Pabba
 
 ## Gameplay
-Players click falling piano tiles to score points. There are 3 difficulty levels:
-- Easy
-- Medium
-- Hard
+Click on the falling piano tiles before they reach the bottom to score points. There are 3 difficulty levels:
+- Easy - slow speed
+- Medium - moderate speed
+- Hard - fast speed
 
-Each level increases the tile falling speed. The game ends when a tile reaches the bottom without being clicked.
+The game ends when a tile reaches the bottom without being clicked.
 
 ## Features
 - Buttons for navigation and level selection
 - Multiple difficulty levels
-- Sound effects when clicking on tiles
+- Real-time score tracking and game-over screen
+- Simple, intuitive UI
 
 ## Technologies Used
 - JavaScript (ProcessingJS)

@@ -1,3 +1,5 @@
+size(400, 400); //size of the canvas
+
 var drawBitmojiHerik = function(bitmojix,bitmojiy,bitmojiheight){
     noStroke();   
     fill (207, 161, 112);
@@ -20,14 +22,14 @@ var drawBitmojiHerik = function(bitmojix,bitmojiy,bitmojiheight){
     ellipse(bitmojix-41+(bitmojiheight/150*141),bitmojiy-85+(bitmojiheight/150*108),bitmojiheight/150*8,bitmojiheight/150*7); // right earring 
     fill(255, 173, 235);
     stroke(0, 0, 0);
-    arc(bitmojix-41+(bitmojiheight/150*100),bitmojiy-85+(bitmojiheight/150*127),bitmojiheight/150*30,bitmojiheight/150*13,1,180); //lips
-      
+    arc(bitmojix-41+(bitmojiheight/150*100),bitmojiy-85+(bitmojiheight/150*127),bitmojiheight/150*30,bitmojiheight/150*13,radians(1),radians(180)); //lips
+
     fill(0, 0, 0);
     rect(bitmojix-41+(bitmojiheight/150*86),bitmojiy-85+(bitmojiheight/150*64),bitmojiheight/150*61,bitmojiheight/150*2); //hairline
     noStroke();
     fill(0, 0, 0);
-    arc(bitmojix-41+(bitmojiheight/150*114),bitmojiy-85+(bitmojiheight/150*83),bitmojiheight/150*24,bitmojiheight/150*-10,1,200); //right eyebrow
-    arc(bitmojix-41+(bitmojiheight/150*83),bitmojiy-85+(bitmojiheight/150*85),bitmojiheight/150*24,bitmojiheight/150*-10,1,200); // left eyebrow
+    arc(bitmojix-41+(bitmojiheight/150*114),bitmojiy-85+(bitmojiheight/150*83),bitmojiheight/150*24,bitmojiheight/150*-10,radians(1),radians(200)); //right eyebrow
+    arc(bitmojix-41+(bitmojiheight/150*83),bitmojiy-85+(bitmojiheight/150*85),bitmojiheight/150*24,bitmojiheight/150*-10,radians(1),radians(200)); // left eyebrow
     ellipse(bitmojix-41+(bitmojiheight/150*60),bitmojiy-85+(bitmojiheight/150*84),bitmojiheight/150*20,bitmojiheight/150*32); // far left hair
     ellipse(bitmojix-41+(bitmojiheight/150*139),bitmojiy-85+(bitmojiheight/150*84),(bitmojiheight/150*20),(bitmojiheight/150*32)); // far right hair
     ellipse(bitmojix-41+(bitmojiheight/150*73),bitmojiy-85+(bitmojiheight/150*66),(bitmojiheight/150*48),(bitmojiheight/150*27)); //left sideways hair 
@@ -53,19 +55,19 @@ var drawBitmojiMithilesh = function (x,y,h) {
     fill(231, 140, 77);
     ellipse(x+h/60*200,y+h/60*190,h/60*50,h/60*60);//main head
     fill(0, 0, 0);
-    arc(x+h/60*200,y+h/60*188,h/60*55,h/60*70,180,360);//main hair
+    arc(x+h/60*200,y+h/60*188,h/60*55,h/60*70,radians(180),radians(360));//main hair
     fill(231, 140, 77);
     ellipse(x+h/60*200,y+h/60*190,h/60*40,h/60*50);//piece of head at right
     fill(0, 0, 0);
-    arc(x+h/60*200,y+h/60*172,h/60*40,h/60*20,180,360);//piece of hair at center
+    arc(x+h/60*200,y+h/60*172,h/60*40,h/60*20,radians(180),radians(360));//piece of hair at center
     fill(231, 140, 77);
     ellipse(x+h/60*195,y+h/60*185,h/60*30,h/60*30);//piece of head at left
     ellipse(x+h/60*200,y+h/60*184,h/60*30,h/60*30);//piece of head at center
     fill(0, 0, 0);
-    arc(x+h/60*219,y+h/60*173,h/60*17,h/60*25,230,423);//piece of hair on right
+    arc(x+h/60*219,y+h/60*173,h/60*17,h/60*25,radians(230),radians(423));//piece of hair on right
     fill(120, 97, 74);
-    arc(x+h/60*225,y+h/60*185,h/60*10,h/60*10,300,450);//blocking hair on right
-    
+    arc(x+h/60*225,y+h/60*185,h/60*10,h/60*10,radians(300),radians(450));//blocking hair on right
+
     //ear
     fill(231, 140, 77);
     ellipse(x+h/60*177,y+h/60*196,h/60*10,h/60*17);//left ear
@@ -83,9 +85,9 @@ var drawBitmojiMithilesh = function (x,y,h) {
     
     //eyebrows
     stroke(0, 0, 0);
-    arc(x+h/60*210,y+h/60*183,h/60*12,h/60*5,200,340);//right eyebrow
-    arc(x+h/60*190,y+h/60*183,h/60*12,h/60*5,200,340);//left eyebrow
-    
+    arc(x+h/60*210,y+h/60*183,h/60*12,h/60*5,radians(200),radians(340));//right eyebrow
+    arc(x+h/60*190,y+h/60*183,h/60*12,h/60*5,radians(200),radians(340));//left eyebrow
+
     //eyes
     noStroke();
     fill(255,255,255);
@@ -100,7 +102,7 @@ var drawBitmojiMithilesh = function (x,y,h) {
     //mouth
     stroke(0,0,0);
     fill(231, 140, 77);
-    arc(x+h/60*200,y+h/60*205,h/60*15,h/60*5,0,180);//mouth
+    arc(x+h/60*200,y+h/60*205,h/60*15,h/60*5,radians(0),radians(180));//mouth
 
     //shirt
     noStroke();
@@ -118,8 +120,8 @@ var drawBitmojiMithilesh = function (x,y,h) {
     fill(231, 140, 77);
     rect(x+h/60*185,y+h/60*213,h/60*30,h/60*20);//main neck
     fill(120, 97, 74);
-    arc(x+h/60*215,y+h/60*225,h/60*5,h/60*20,90,270);//blocking neck on right
-    arc(x+h/60*185,y+h/60*225,h/60*5,h/60*20,270,450);//blocking neck on left
+    arc(x+h/60*215,y+h/60*225,h/60*5,h/60*20,radians(90),radians(270));//blocking neck on right
+    arc(x+h/60*185,y+h/60*225,h/60*5,h/60*20,radians(270),radians(450));//blocking neck on left
     fill(231, 140, 77);
     triangle(x+h/60*185,y+h/60*232,x+h/60*215,y+h/60*232,x+h/60*203,y+h/60*245);//bottom part of neck
     
@@ -392,7 +394,7 @@ mouseClicked = function(){ //for when the buttons are clicked and for when the t
     if(currentScene === 3 || 4 || 5){ //the games screens: easy, medium, and hard
         for(var i=0; i<tiles; i++){
             if(mouseX>xTile[i]&&mouseX<xTile[i]+50&&mouseY>yTile[i]&&mouseY<yTile[i]+100&&lose[i]===false){ //only when they click inside the tile; the lose thing is so that they don't click on it more than once and get extra points
-                playSound(getSound("rpg/metal-chime")); //the sound when they click
+                //playSound(getSound("rpg/metal-chime")); //the sound when they click
                 colorTile[i] = color(0,0,0); //changes the color to black when clicked
                 lose[i] = true; //this helps to know if they clicked on it or not
                 score++; //for each tile they click on, they get a point

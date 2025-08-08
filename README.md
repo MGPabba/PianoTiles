@@ -26,4 +26,4 @@ The game ends when a tile reaches the bottom without being clicked.
 - GitHub Pages (for deployment)
 
 ## Live Demo
-[Click to Play](https://MGPabba.github.io/PianoTiles/)
+[Click to Play](https://mgpabba.github.io/PianoTiles/)
